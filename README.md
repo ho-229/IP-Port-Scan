@@ -5,7 +5,7 @@
 * Compiler：Microsoft Visual C++ 2017<br>
 ---------
 ### 项目介绍
-* 这是一个IP段端口扫描器，里面用到了'套接字(socket TCP)''多线程(thread)''互斥锁(mutex)''原子计数(atomic)''C++ STL'等等，希望能够帮到大家，也请各位大佬多多指教。<br>
+* 这是一个IP段端口扫描器，里面用到了 `套接字(socket TCP)` `多线程(thread)` `互斥锁(mutex)` `原子计数(atomic)` `C++ STL`等等，希望能够帮到大家，也请各位大佬多多指教。<br>
 ---------
 ### 关于作者
 * QQ：2189684957<br>
