@@ -51,7 +51,7 @@ bool init_WSA()
 
 void Scan_IP_Port(vector<string>& IPs,ofstream& out_IP, const size_t& size)
 {
-	SOCKET mysocket;
+	SOCKET mysocket = NULL;
 	sockaddr_in my_addr;
 	while (Search_Compelet != size)
 	{
@@ -72,14 +72,14 @@ void Scan_IP_Port(vector<string>& IPs,ofstream& out_IP, const size_t& size)
 			Open_IP++;
 			lock_guard<mutex>temp(mtx);
 			color(11);
-			cout << IP << " Port " << Port << " is open" << endl;;
+			cout << IP << " Port " << Port << " is open\n";
 			out_IP << IP << endl;
 		}
 		else
 		{
 			lock_guard<mutex>temp(mtx);
 			color(14);
-			cout << IP << " connect failed!" << endl;
+			cout << IP << " connect failed!\n";
 		}
 	}
 	closesocket(mysocket);

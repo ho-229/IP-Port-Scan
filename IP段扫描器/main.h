@@ -5,7 +5,6 @@
 #include<winsock.h>
 #include<string>
 #include<fstream>
-#include<sstream>
 #include<vector>
 #include<atomic>
 #include<Windows.h>
